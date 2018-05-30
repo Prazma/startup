@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>justai</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <meta name="author" content="Tomoyoshi Yamamoto">
+    <meta name="description" content="An AI that thinks and code for you. Styles not supported tho.">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="projectWrapper">
+      <h1>AI that codes</h1><br>
+      <span>by Tomoyoshi Yamamoto</span>
+      <form action="javascript:aiBrain.request()">
+        <input class="usrRequest" id="usrInput" placeholder="Enter Request" spellcheck="false">
+        <input class="btn" type="submit">
+      </form>
+      <hr>
+      <div>
+        <h2>status for nerds</h2>
+        <strong>User's Request: </strong><span id="usrInputDisplay">--</span><br>
+        <strong>Keywords: </strong><span>--</span><br>
+        <strong>AI status: </strong><span id="aiStatsEle">sleeping</span><br>
+        <hr>
+        <span>I will become CEO when I complete this (lol)</span>
+      </div>
+    </div>
+    <script src="js/ui/elementManager.js"></script>
+    <script src="js/data/ai.dict.js"></script>
+    <script src="js/ai/ai.brain.js"></script>
+  </body>
+</html>
